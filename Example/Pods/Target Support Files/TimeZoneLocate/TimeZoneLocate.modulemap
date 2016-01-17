@@ -1,0 +1,6 @@
+framework module TimeZoneLocate {
+  umbrella header "TimeZoneLocate-umbrella.h"
+
+  export *
+  module * { export * }
+}

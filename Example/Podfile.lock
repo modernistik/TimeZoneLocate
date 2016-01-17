@@ -1,0 +1,14 @@
+PODS:
+  - TimeZoneLocate (0.1.0)
+
+DEPENDENCIES:
+  - TimeZoneLocate (from `../`)
+
+EXTERNAL SOURCES:
+  TimeZoneLocate:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TimeZoneLocate: 9f842c3708e1244bb605dd85a1bda5ec37e721ac
+
+COCOAPODS: 0.39.0
