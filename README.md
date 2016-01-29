@@ -30,7 +30,7 @@ This utility is the Swift 2.2 port of the [APTimeZones](https://github.com/Alter
 To install it, simply add the following line to your Podfile:
 
 ```ruby
-pod "TimeZoneLocate", git: 'https://github.com/modernistik/TimeZoneLocate.git'
+pod "TimeZoneLocate"
 ```
 
 ## Authors
