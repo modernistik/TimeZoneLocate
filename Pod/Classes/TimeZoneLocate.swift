@@ -40,28 +40,28 @@ import Foundation
 import CoreLocation
 
 extension CLLocation {
-    public var timeZone: NSTimeZone {
+    public var timeZone: TimeZone {
         return TimeZoneLocate.timeZoneWithLocation(self)
     }
 }
 
-public class TimeZoneLocate : NSObject {
+open class TimeZoneLocate : NSObject {
     
     // MARK: Singleton
-    public static let sharedInstance = TimeZoneLocate()
-    public static let timeZonesDB = TimeZoneLocate.importDataBaseFromFile("timezones.json")
+    open static let sharedInstance = TimeZoneLocate()
+    open static let timeZonesDB = TimeZoneLocate.importDataBaseFromFile("timezones.json")
     
     /*
     Get timezone with lat/lon and country code
     */
-    public class func timeZoneWithLocation(location:CLLocation) -> NSTimeZone {
+    open class func timeZoneWithLocation(_ location:CLLocation) -> TimeZone {
         if let closestZoneInfo = closestZoneInfoWithLocation(location, source: TimeZoneLocate.timeZonesDB),
-            timeZone = timeZoneWithDictionary(closestZoneInfo)
+            let timeZone = timeZoneWithDictionary(closestZoneInfo)
         {
             return timeZone
         } else {
             //We've found nothing. Let's use system.
-            return NSTimeZone.systemTimeZone()
+            return TimeZone.current
         }
         
     }
@@ -70,16 +70,16 @@ public class TimeZoneLocate : NSObject {
     Get timezone with lat/lon and country code.
     Extremely speeds up and more carefull result.
     */
-    public class func timeZoneWithLocation(location:CLLocation, countryCode:String?) -> NSTimeZone? {
+    open class func timeZoneWithLocation(_ location:CLLocation, countryCode:String?) -> TimeZone? {
         
         //Need a countr
         if let countryCode = countryCode,
             //Filter
-            filteredZones = filteredTimeZonesWithCountyCode(countryCode),
+            let filteredZones = filteredTimeZonesWithCountyCode(countryCode),
             //Get closest zone info
-            closestZoneInfo = closestZoneInfoWithLocation(location, source:filteredZones),
+            let closestZoneInfo = closestZoneInfoWithLocation(location, source:filteredZones),
             //get timzone
-            timeZone = timeZoneWithDictionary(closestZoneInfo)
+            let timeZone = timeZoneWithDictionary(closestZoneInfo)
         {
             return timeZone
         } else {
@@ -91,14 +91,14 @@ public class TimeZoneLocate : NSObject {
     /*
     Import from DB
     */
-    public class func importDataBaseFromFile(fileName:String) -> [[NSObject:AnyObject]] {
-        let currentBundle = NSBundle(forClass: TimeZoneLocate.self)
+    open class func importDataBaseFromFile(_ fileName:String) -> [[AnyHashable: Any]] {
+        let currentBundle = Bundle(for: TimeZoneLocate.self)
         
-        let filePath = currentBundle.pathForResource(fileName, ofType: nil, inDirectory: "TimeZoneLocate.bundle") ??  currentBundle.pathForResource(fileName, ofType: nil)
+        let filePath = currentBundle.path(forResource: fileName, ofType: nil, inDirectory: "TimeZoneLocate.bundle") ??  currentBundle.path(forResource: fileName, ofType: nil)
         do {
             if let filePath = filePath,
-                jsonData = NSData(contentsOfFile: filePath),
-                timeZones = try NSJSONSerialization.JSONObjectWithData(jsonData, options: .AllowFragments) as? [[NSObject:AnyObject]]
+                let jsonData = try? Data(contentsOf: URL(fileURLWithPath: filePath)),
+                let timeZones = try JSONSerialization.jsonObject(with: jsonData, options: .allowFragments) as? [[AnyHashable: Any]]
             {
                 return timeZones
             }
@@ -108,24 +108,24 @@ public class TimeZoneLocate : NSObject {
         
         //let filePath = currentBundle.resourcePath
         assertionFailure("Error loading or parse timeZoneDB file: \(filePath)")
-        return [[NSObject:AnyObject]]()
+        return [[AnyHashable: Any]]()
     }
     
     /*
     Calculates the closest distance from source
     */
-    public class func closestZoneInfoWithLocation(location: CLLocation, source:[[NSObject:AnyObject]]?) -> [NSObject:AnyObject]? {
+    open class func closestZoneInfoWithLocation(_ location: CLLocation, source:[[AnyHashable: Any]]?) -> [AnyHashable: Any]? {
         
         var closestDistance: CLLocationDistance = Double.infinity
-        var closestZoneInfo: [NSObject:AnyObject]?
+        var closestZoneInfo: [AnyHashable: Any]?
         
         if let source = source {
             for locationInfo in source {
                 
                 if let latitude = locationInfo["latitude"] as? Double,
-                    longitude = locationInfo["longitude"] as? Double {
+                    let longitude = locationInfo["longitude"] as? Double {
                         
-                        let distance = location.distanceFromLocation( CLLocation(latitude: latitude, longitude: longitude) )
+                        let distance = location.distance( from: CLLocation(latitude: latitude, longitude: longitude) )
                         if  distance < closestDistance {
                             closestDistance = distance
                             closestZoneInfo = locationInfo
@@ -140,18 +140,18 @@ public class TimeZoneLocate : NSObject {
     /*
     Filtering the whole DB with the country code
     */
-    public class func filteredTimeZonesWithCountyCode(countryCode: String) -> [[NSObject:AnyObject]]? {
+    open class func filteredTimeZonesWithCountyCode(_ countryCode: String) -> [[AnyHashable: Any]]? {
         let predicate = NSPredicate(format: "country_code LIKE %@", countryCode)
-        return (TimeZoneLocate.timeZonesDB as NSArray).filteredArrayUsingPredicate(predicate) as? [[NSObject:AnyObject]]
+        return (TimeZoneLocate.timeZonesDB as NSArray).filtered(using: predicate) as? [[AnyHashable: Any]]
     }
     
     /*
     Timezone from dict
     */
-    public class func timeZoneWithDictionary(zoneInfo: [NSObject:AnyObject]?) -> NSTimeZone? {
+    open class func timeZoneWithDictionary(_ zoneInfo: [AnyHashable: Any]?) -> TimeZone? {
         
         if let zoneName = zoneInfo?["zone"] as? String {
-            return NSTimeZone(name: zoneName)
+            return TimeZone(identifier: zoneName)
         }
         return nil
     }
