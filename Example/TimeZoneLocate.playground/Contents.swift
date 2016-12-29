@@ -4,7 +4,7 @@ import UIKit
 import MapKit
 import TimeZoneLocate
 
-var str = "Hello, NSTimeZone!"
+var str = "Hello, TimeZone!"
 
 let location = CLLocation(latitude: 32.88, longitude: -117.15)
 //helper method

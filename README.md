@@ -11,7 +11,7 @@ To continue using Swift 2.2 version, use version `0.1.0`.
     //San Diego, CA, USA
     let location = CLLocation(latitude: 32.88, longitude: -117.15)
 
-    //NSTimeZone from extension
+    //TimeZone from extension
     var timeZone = location.timeZone
     print(timeZone)
 
