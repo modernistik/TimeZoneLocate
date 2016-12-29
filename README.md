@@ -1,7 +1,8 @@
 # TimeZoneLocate
 
-This utility is the Swift 2.2 port of the [APTimeZones](https://github.com/Alterplay/APTimeZones) library with the support for bundled frameworks. If your project is Objective-C, we recommend using theirs.
+This utility is the Swift 3.0 port of the [APTimeZones](https://github.com/Alterplay/APTimeZones) library with the support for bundled frameworks. If your project is Objective-C, we recommend using theirs.
 
+To continue using Swift 2.2 version, use version `0.1.0`.
 
 ###Usage:
 

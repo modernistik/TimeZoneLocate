@@ -1,12 +1,9 @@
 source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+inhibit_all_warnings!
+project 'TimeZoneLocate'
 use_frameworks!
 
-target 'TimeZoneLocate_Example', :exclusive => true do
+target 'TimeZoneLocate_Example' do
   pod "TimeZoneLocate", :path => "../"
-end
-
-target 'TimeZoneLocate_Tests', :exclusive => true do
-  pod "TimeZoneLocate", :path => "../"
-
-  
 end

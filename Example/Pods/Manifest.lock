@@ -1,5 +1,5 @@
 PODS:
-  - TimeZoneLocate (0.1.0)
+  - TimeZoneLocate (0.2.0)
 
 DEPENDENCIES:
   - TimeZoneLocate (from `../`)
@@ -9,6 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  TimeZoneLocate: 9f842c3708e1244bb605dd85a1bda5ec37e721ac
+  TimeZoneLocate: 9453e3f75328667e59b99d76a71bb66ac440b33b
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 932700f660541b707c3c738ec4dce4af8da67bdc
+
+COCOAPODS: 1.1.1
