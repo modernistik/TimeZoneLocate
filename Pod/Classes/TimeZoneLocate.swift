@@ -32,7 +32,7 @@ Project Name was changed to prevent pod conflict.
 Swift Conversion by Modernistik LLC.
 
 This version featured:
-* Support for Swift 2.1 syntax
+* Support for Swift 3.0 syntax
 * Support for Framework linking
 
 */
