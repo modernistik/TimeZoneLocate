@@ -16,11 +16,11 @@ To continue using Swift 2.2 version, use version `0.1.0`.
     print(timeZone)
 
     //or calling the class method
-    timeZone = TimeZoneLocate.timeZoneWithLocation(location)
+    timeZone = TimeZoneLocate.timeZone(location: location)
     print(timeZone)
 
     //if you have the country code, you can speed things up.
-    timeZone = timeZoneWithLocation(location, countryCode: "US")
+    timeZone = TimeZoneLocate.timeZone(location: location, countryCode: "US")
 
 ```
 
