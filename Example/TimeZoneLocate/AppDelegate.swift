@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print(locationTimeZone!)
                 //of if country code is known, then
                 if let location = placemark.location, let countryCode = placemark.addressDictionary?["CountryCode"] as? String {
-                    let fastTimeZone = TimeZoneLocate.timeZoneWithLocation(location, countryCode: countryCode)
+                    let fastTimeZone = TimeZoneLocate.timeZone(location: location, countryCode: countryCode)
                     print(fastTimeZone!)
                 }
                 
