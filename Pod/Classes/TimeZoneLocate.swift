@@ -99,7 +99,7 @@ open class TimeZoneLocate : NSObject {
         }
         
         //let filePath = currentBundle.resourcePath
-        assertionFailure("Error loading or parse timeZoneDB file: \(filePath)")
+        assertionFailure("Error loading or parse timeZoneDB file: \(filePath ?? "filePath is nil")")
         return [[AnyHashable: Any]]()
     }
     
