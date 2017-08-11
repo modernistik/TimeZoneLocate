@@ -75,7 +75,7 @@ open class TimeZoneLocate : NSObject {
             let closestZoneInfo = closestZoneInfo(location:location, source:filteredZones),
             //get timzone
             let timeZone = timeZoneWithDictionary(closestZoneInfo)
-        else { return self.timeZone(location: location)}
+        else { return TimeZoneLocate.timeZoneWithLocation(location)}
         
         return timeZone
     }

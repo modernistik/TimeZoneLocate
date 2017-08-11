@@ -25,6 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Or the shared method
         let timeZone = TimeZoneLocate.timeZoneWithLocation(location)
         print(timeZone)
+        if let timeZone = TimeZoneLocate.timeZone(location: location, countryCode: nil) {
+            print(timeZone)
+        }
         
         let geocoder = CLGeocoder()
         geocoder.geocodeAddressString("San Diego, CA") { (placemarks, error) -> Void in
