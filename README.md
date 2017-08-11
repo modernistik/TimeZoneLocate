@@ -2,9 +2,13 @@
 
 This utility is the Swift 3.0 port of the [APTimeZones](https://github.com/Alterplay/APTimeZones) library with the support for bundled frameworks. If your project is Objective-C, we recommend using theirs.
 
-To continue using Swift 2.2 version, use version `0.1.0`.
+For Swift 2 version, use version `0.1.0`.
 
-###Usage:
+For Swift 3 version, use version `0.3.0`.
+
+For Swift 4 version, use version `0.4.0`. (coming soon)
+
+### Usage:
 
 ```swift
 
