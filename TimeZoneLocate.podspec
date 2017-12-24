@@ -40,3 +40,6 @@ Pod::Spec.new do |s|
   s.frameworks = 'UIKit', 'CoreLocation'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
+# To publish `pod trunk push TimeZoneLocate.podspec`
+# https://guides.cocoapods.org/making/getting-setup-with-trunk.html
+# Register a new authentication token: pod trunk register persaud@modernistik.com 'Anthony Persaud' --description='Macbook'
