@@ -1,12 +1,10 @@
 # TimeZoneLocate
 
-This utility is the Swift 3.0 port of the [APTimeZones](https://github.com/Alterplay/APTimeZones) library with the support for bundled frameworks. If your project is Objective-C, we recommend using theirs.
+This utility is the Swift port of the [APTimeZones](https://github.com/Alterplay/APTimeZones) library with the support for bundled frameworks. If your project is Objective-C, we recommend using theirs.
 
-For Swift 2 version, use version `0.1.0`.
-
+For Swift 4 version, use version `0.4.0`.
 For Swift 3 version, use version `0.3.0`.
-
-For Swift 4 version, use version `0.4.0`. (coming soon)
+For Swift 2 version, use version `0.1.0`.
 
 ### Usage:
 
@@ -15,7 +13,7 @@ For Swift 4 version, use version `0.4.0`. (coming soon)
     //San Diego, CA, USA
     let location = CLLocation(latitude: 32.88, longitude: -117.15)
 
-    //TimeZone from extension
+    //TimeZone from extension (fast, synchronous, approximate)
     var timeZone = location.timeZone
     print(timeZone)
 
@@ -26,9 +24,20 @@ For Swift 4 version, use version `0.4.0`. (coming soon)
     //if you have the country code, you can speed things up.
     timeZone = TimeZoneLocate.timeZone(location: location, countryCode: "US")
 
-```
+    // A MORE accurate time zone if you are connected to network. (iOS 9.0 or later)
+    location.timeZone { (tz) -> (Void) in
+      guard let tz = tz else { return }
+      // got a more accureate timezone from the network
+      print("Network TimeZone: \(tz.identifier)")
+    }
 
-## Requirements
+    // Same thing
+    TimeZoneLocate.geocodeTimeZone(location: location) { (tz) -> (Void) in
+      guard let tz = tz else { return }
+      print("Network TimeZone: \(tz.identifier) (class method)")
+    }
+
+```
 
 ## Installation
 
@@ -40,7 +49,7 @@ pod "TimeZoneLocate"
 
 ## Authors
  * Original Objective-C Version: Sergii Kryvoblotskyi, Alterplay
- * Swift Contributor: Anthony Persaud, persaud@modernistik.com
+ * Swift Contributor: Anthony Persaud, persaud@modernistik.com (https://www.modernistik.com)
 
 ## License
 

@@ -3,7 +3,9 @@
 import UIKit
 import MapKit
 import TimeZoneLocate
+import PlaygroundSupport
 
+PlaygroundPage.current.needsIndefiniteExecution = true
 var str = "Hello, TimeZone!"
 
 let location = CLLocation(latitude: 32.88, longitude: -117.15)
@@ -14,6 +16,15 @@ print("TimeZone: \(theTimeZone.identifier)")
 let timeZone = TimeZoneLocate.timeZoneWithLocation(location)
 print(timeZone)
 
+location.timeZone { (tz) -> (Void) in
+    guard let tz = tz else { return }
+    print("Network TimeZone: \(tz.identifier)")
+    // got a more accureate timezone from the network
+}
+
+TimeZoneLocate.geocodeTimeZone(location: location) { (tz) -> (Void) in
+
+}
 let geocoder = CLGeocoder()
 geocoder.geocodeAddressString("San Diego, CA") { (placemarks, error) -> Void in
     if error == nil, let placemarks = placemarks,

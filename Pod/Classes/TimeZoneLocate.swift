@@ -39,9 +39,17 @@ This version featured:
 import Foundation
 import CoreLocation
 
+public typealias TimeZoneLocateResult = (_ timeZone:TimeZone?) -> (Void)
+
 extension CLLocation {
     public var timeZone: TimeZone {
         return TimeZoneLocate.timeZoneWithLocation(self)
+    }
+    
+    /// Fetch a more accurate time zone using reverse geocoding.
+    @available(iOS 9.0, *)
+    public func timeZone(completion:@escaping TimeZoneLocateResult) {
+        TimeZoneLocate.geocodeTimeZone(location: self, completion: completion)
     }
 }
 
@@ -51,9 +59,18 @@ open class TimeZoneLocate : NSObject {
     open static let sharedInstance = TimeZoneLocate()
     open static let timeZonesDB = TimeZoneLocate.importDataBaseFromFile("timezones.json")
     
-    /*
-    Get timezone with lat/lon and country code
-    */
+    /// Fetch a more accurate time zone using reverse geocoding. If a TimeZone is found, it is returned, otherwise nil.
+    @available(iOS 9.0, *)
+    open class func geocodeTimeZone(location:CLLocation, completion:@escaping TimeZoneLocateResult) {
+        CLGeocoder().reverseGeocodeLocation(location) { (placemarks, error) in
+            guard error == nil, let tz = placemarks?.last?.timeZone else {
+                return completion(nil)
+            }
+            completion(tz)
+        }
+    }
+    
+    /// Get timezone with lat/lon and country code
     open class func timeZoneWithLocation(_ location:CLLocation) -> TimeZone {
         guard let closestZoneInfo = closestZoneInfo(location:location, source: TimeZoneLocate.timeZonesDB),
               let timeZone = timeZoneWithDictionary(closestZoneInfo)
@@ -66,8 +83,7 @@ open class TimeZoneLocate : NSObject {
     Extremely speeds up and more carefull result.
     */
     open class func timeZone(location:CLLocation, countryCode:String? = nil) -> TimeZone? {
-        
-        //Need a countr
+        //Need a country code
         guard let countryCode = countryCode,
             //Filter
             let filteredZones = filteredTimeZones(countryCode:countryCode),
