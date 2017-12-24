@@ -16,17 +16,16 @@ print(timeZone)
 
 let geocoder = CLGeocoder()
 geocoder.geocodeAddressString("San Diego, CA") { (placemarks, error) -> Void in
-    if error == nil, let placemarks = placemarks, let placemark = placemarks.first {
+    if error == nil, let placemarks = placemarks,
+                     let placemark = placemarks.first,
+                     let locationTimeZone = placemark.location?.timeZone {
         
-        let locationTimeZone = placemark.location?.timeZone
-        print(locationTimeZone!)
+        print(locationTimeZone)
         //of if country code is known, then
-        if let location = placemark.location, let countryCode = placemark.addressDictionary?["CountryCode"] as? String {
-            let fastTimeZone = TimeZoneLocate.timeZoneWithLocation(location, countryCode: countryCode)
-            print(fastTimeZone!)
+        if let location = placemark.location, let countryCode = placemark.isoCountryCode,
+            let fastTimeZone = TimeZoneLocate.timeZone(location: location, countryCode: countryCode) {
+            print(fastTimeZone)
         }
-        
-        //Helper method
         
     }
 }
