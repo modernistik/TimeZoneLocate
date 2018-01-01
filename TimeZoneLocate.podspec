@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/modernistik'
 
   s.platform     = :ios, '9.0'
-  s.requires_arc = true
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
 
   s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'UIKit', 'CoreLocation'
+  s.frameworks = ['UIKit', 'CoreLocation']
   # s.dependency 'AFNetworking', '~> 2.3'
 end
 # To publish `pod trunk push TimeZoneLocate.podspec`
