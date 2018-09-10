@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "TimeZoneLocate"
-  s.version          = "0.4.0"
+  s.version          = "0.4.1"
   s.summary          = "Get a time zone for a location offline."
 
 # This description is used to generate tags and improve search results.
@@ -28,8 +28,9 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/modernistik/TimeZoneLocate.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/modernistik'
 
-  s.platform     = :ios, '9.0'
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
+  s.ios.deployment_target = '9.0'
+  s.tvos.deployment_target = '9.0'
+  s.swift_version = "4.0"
 
   s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
