@@ -56,8 +56,8 @@ extension CLLocation {
 open class TimeZoneLocate : NSObject {
     
     // MARK: Singleton
-    open static let sharedInstance = TimeZoneLocate()
-    open static let timeZonesDB = TimeZoneLocate.importDataBaseFromFile("timezones.json")
+    public static let sharedInstance = TimeZoneLocate()
+    public static let timeZonesDB = TimeZoneLocate.importDataBaseFromFile("timezones.json")
     
     /// Fetch a more accurate time zone using reverse geocoding. If a TimeZone is found, it is returned, otherwise nil.
     @available(iOS 9.0, *)
