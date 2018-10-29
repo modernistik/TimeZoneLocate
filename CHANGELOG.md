@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 `TimeZoneLocate` adheres to [Semantic Versioning](http://semver.org/).
 
 ---
+## 0.4.2
+* Warning fixes to static properties.
+
+## 0.4.1
+* Support for Swift 4.2
+
 ## 0.4.0
 * Support for Swift 4.0
 * Adds extension method ` timeZone(completion:TimeZoneLocateResult)` that uses

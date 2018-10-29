@@ -7,88 +7,91 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11F5501F276494634181CF6C9FC02E92 /* TimeZoneLocate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D19C96F0BD7A5FC535A0A8D9D29F372F /* TimeZoneLocate.bundle */; };
-		22E4A51C30FC94D9332936653AFDCF90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79182AE44C97C1E8C888A725FD7BD823 /* Foundation.framework */; };
-		2FC89B56F6282A9036DBD7052EB3D097 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5190CB20CBCB12783E3337EF782F6D2 /* UIKit.framework */; };
-		5A0E9F9FA885DEA08ED65B2480A614A0 /* Pods-TimeZoneLocate_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F7FDF8282C62EF5D4CE33641F4F0C25 /* Pods-TimeZoneLocate_Example-dummy.m */; };
-		61DD04C44CF08A1AFD7610D51BA55692 /* TimeZoneLocate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B21DCA0A99638EBCCE2F1F6BC1CDB3 /* TimeZoneLocate.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		650CE3CC786AB5DB39BCE11C76DBE054 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD19AB250D71A3F1FB09A3110CFB130D /* CoreLocation.framework */; };
-		DB2EA640327866184A626E73E3D06F73 /* Pods-TimeZoneLocate_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD75873D33E4F9D216A4DB21AC206207 /* Pods-TimeZoneLocate_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DCE86F92A70DAAB49F36420665EA4BF6 /* TimeZoneLocate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED515E1727063DEBF1F35F7A1A830A3E /* TimeZoneLocate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EB825AAAC69D79832C434979D4DB272E /* timezones.json in Resources */ = {isa = PBXBuildFile; fileRef = 5745CB22F8DEB1DB27681A8CBFA3394B /* timezones.json */; };
-		FE8DD629DEE1868CE7BF6122D33215FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79182AE44C97C1E8C888A725FD7BD823 /* Foundation.framework */; };
-		FEF5DFA405C19E6C1C123BF36028BCA1 /* TimeZoneLocate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F38EAF23A07FDF754D884F90CBC9343 /* TimeZoneLocate-dummy.m */; };
+		0480E556FAC1F7D1AAA9F70B09A83D7D /* TimeZoneLocate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8C22D445CE0E7BB90C8175A536E113 /* TimeZoneLocate-dummy.m */; };
+		21A38F44678AA8AD77BDE2273B67AC1F /* Pods-TimeZoneLocate_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA258B8376B6620E2D02D5BF7E157ABF /* Pods-TimeZoneLocate_Example-dummy.m */; };
+		838147E465C16D8228744A6D71A37F3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B7ABADEB88326912AFB72BB17032D8 /* Foundation.framework */; };
+		8A273C0BD85853C7E20AC3FF11502186 /* Pods-TimeZoneLocate_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC496FE12FC89E71FCCB91FB3071C36A /* Pods-TimeZoneLocate_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96EC5CDA644869D214B0C821CA71B274 /* timezones.json in Resources */ = {isa = PBXBuildFile; fileRef = 881B635B1EB9EAF98434D3020BA2BB5D /* timezones.json */; };
+		9BC57B6016365FC443F2C032C99EEFC2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A216DB36140C5737909B8937BAE6854 /* UIKit.framework */; };
+		A54726256DDF547A9659430891105C99 /* TimeZoneLocate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A7DB7ECEB2E64A43F60AD56519634F /* TimeZoneLocate.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C444B19DA6194D39DCB63CFBA2E0D8A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B7ABADEB88326912AFB72BB17032D8 /* Foundation.framework */; };
+		E05A0FC7AF47DD96BA761AC629E8CBD9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D12DA972E4C3874AAB1AD136031AC7B8 /* CoreLocation.framework */; };
+		EC30AB9E7E4CF1C17C318F554437531D /* TimeZoneLocate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 650CDAD447700ACEBC88654B28D28641 /* TimeZoneLocate.bundle */; };
+		F3AE464902C7E7E3ABBC9AA4F25E9465 /* TimeZoneLocate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F0D7C83693C5D292731E7A48B3BC8689 /* TimeZoneLocate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		54DBA89451EA815AC7AB21372B4503C6 /* PBXContainerItemProxy */ = {
+		6535E03BED26C6205ABED86AABB1F5BC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E60D78971D9924206DEE794D780CF0F4;
-			remoteInfo = "TimeZoneLocate-TimeZoneLocate";
-		};
-		85986145E3403CF4E0B6590F786B7C52 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1D95E9399D3EA2DE0A0AA42B6F8429CD;
+			remoteGlobalIDString = 40A7E9BA5B202C33EE4E12AF7D9DCEEE;
 			remoteInfo = TimeZoneLocate;
+		};
+		B32A6F313FBE2C3BF115BC7D10B90667 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA1DA21380A13D921EE2991AB59BE32B;
+			remoteInfo = "TimeZoneLocate-TimeZoneLocate";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		09216C2796818B0B1B678E47C0FFF54E /* ResourceBundle-TimeZoneLocate-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TimeZoneLocate-Info.plist"; sourceTree = "<group>"; };
-		0A40E16AFFB592FC0BDDD5E3C245ACF4 /* TimeZoneLocate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TimeZoneLocate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2126EF8958D95C60833C5839A75283DC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2AF535172D66FEB296597232CEAF05BC /* Pods-TimeZoneLocate_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TimeZoneLocate_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		2F7FDF8282C62EF5D4CE33641F4F0C25 /* Pods-TimeZoneLocate_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TimeZoneLocate_Example-dummy.m"; sourceTree = "<group>"; };
-		41CA675A5C4E74198641317C1DF149F4 /* TimeZoneLocate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TimeZoneLocate.modulemap; sourceTree = "<group>"; };
-		46A246791687F4B4D961EDDEA10ED998 /* Pods-TimeZoneLocate_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TimeZoneLocate_Example-frameworks.sh"; sourceTree = "<group>"; };
-		5745CB22F8DEB1DB27681A8CBFA3394B /* timezones.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = timezones.json; path = Pod/Assets/timezones.json; sourceTree = "<group>"; };
-		5767069AED7624C7C136E7062E08B0D2 /* Pods-TimeZoneLocate_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TimeZoneLocate_Example-resources.sh"; sourceTree = "<group>"; };
-		60592F86E32230FE4227280C12EA9A12 /* Pods-TimeZoneLocate_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TimeZoneLocate_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6B084B6F7FE4BA8CCD17F0F17F351856 /* Pods-TimeZoneLocate_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TimeZoneLocate_Example.modulemap"; sourceTree = "<group>"; };
-		6C987D6E91FD0B201A53D75D6CD472A5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6F38EAF23A07FDF754D884F90CBC9343 /* TimeZoneLocate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TimeZoneLocate-dummy.m"; sourceTree = "<group>"; };
-		79182AE44C97C1E8C888A725FD7BD823 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9BC0FFE7B51099C60A5E46984D7FFC61 /* Pods-TimeZoneLocate_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TimeZoneLocate_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B3806BA00CBFC8C97556D1BE7E62A890 /* Pods_TimeZoneLocate_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeZoneLocate_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7C839EE106577343DA4DD0EC0F49470 /* TimeZoneLocate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TimeZoneLocate-prefix.pch"; sourceTree = "<group>"; };
-		BE2DC41554424A4499CEE120C734E57E /* TimeZoneLocate.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TimeZoneLocate.xcconfig; sourceTree = "<group>"; };
-		C20B14B88F1CB63C697F3D465DFD410D /* Pods-TimeZoneLocate_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TimeZoneLocate_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		CD19AB250D71A3F1FB09A3110CFB130D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
-		D19C96F0BD7A5FC535A0A8D9D29F372F /* TimeZoneLocate.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeZoneLocate.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5190CB20CBCB12783E3337EF782F6D2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		DD75873D33E4F9D216A4DB21AC206207 /* Pods-TimeZoneLocate_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TimeZoneLocate_Example-umbrella.h"; sourceTree = "<group>"; };
-		ED515E1727063DEBF1F35F7A1A830A3E /* TimeZoneLocate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TimeZoneLocate-umbrella.h"; sourceTree = "<group>"; };
-		F1B21DCA0A99638EBCCE2F1F6BC1CDB3 /* TimeZoneLocate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeZoneLocate.swift; path = Pod/Classes/TimeZoneLocate.swift; sourceTree = "<group>"; };
+		1B8C22D445CE0E7BB90C8175A536E113 /* TimeZoneLocate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TimeZoneLocate-dummy.m"; sourceTree = "<group>"; };
+		257E903349F8C8824556DF26ECB76295 /* TimeZoneLocate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TimeZoneLocate.framework; path = TimeZoneLocate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B7FAE20B5E3A6C5A80223BACCD84C9F /* Pods_TimeZoneLocate_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TimeZoneLocate_Example.framework; path = "Pods-TimeZoneLocate_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		328A1F1193D7BD0E4AC78D21C4868FB2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3366D20EDDD7D97B41706ABC1BE622C8 /* TimeZoneLocate.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = TimeZoneLocate.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		52D1F537C6A85BB0D538E2A9BB1114CC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		591D686770BB4E75178B7BBF40418621 /* TimeZoneLocate.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TimeZoneLocate.xcconfig; sourceTree = "<group>"; };
+		5F63E2F7327A3A4AA148EBCA3468207F /* Pods-TimeZoneLocate_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TimeZoneLocate_Example.modulemap"; sourceTree = "<group>"; };
+		650CDAD447700ACEBC88654B28D28641 /* TimeZoneLocate.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TimeZoneLocate.bundle; path = "TimeZoneLocate-TimeZoneLocate.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A216DB36140C5737909B8937BAE6854 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		6E29B73439E16B7440538D0ED4719B3B /* Pods-TimeZoneLocate_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TimeZoneLocate_Example.release.xcconfig"; sourceTree = "<group>"; };
+		70B7ABADEB88326912AFB72BB17032D8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		881B635B1EB9EAF98434D3020BA2BB5D /* timezones.json */ = {isa = PBXFileReference; includeInIndex = 1; name = timezones.json; path = Pod/Assets/timezones.json; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		98699194437AB5927D1452DC9C664BAC /* Pods-TimeZoneLocate_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TimeZoneLocate_Example-resources.sh"; sourceTree = "<group>"; };
+		99071769FEEE750E3EDF3DB7EB91E152 /* Pods-TimeZoneLocate_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TimeZoneLocate_Example-frameworks.sh"; sourceTree = "<group>"; };
+		9BD1D20078CEA08CD450A0A72B691F28 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB54D595CA182390BCDE2EDBF0E9EE37 /* TimeZoneLocate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TimeZoneLocate-prefix.pch"; sourceTree = "<group>"; };
+		BB8F785B53E95DD6E750B53FF24ACE62 /* ResourceBundle-TimeZoneLocate-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TimeZoneLocate-Info.plist"; sourceTree = "<group>"; };
+		C0378FA6D5EF15748888C09D6FD9E627 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D12DA972E4C3874AAB1AD136031AC7B8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		D5A7DB7ECEB2E64A43F60AD56519634F /* TimeZoneLocate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeZoneLocate.swift; path = Pod/Classes/TimeZoneLocate.swift; sourceTree = "<group>"; };
+		DC496FE12FC89E71FCCB91FB3071C36A /* Pods-TimeZoneLocate_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TimeZoneLocate_Example-umbrella.h"; sourceTree = "<group>"; };
+		DE4AC5832B9E8CAF17F94F57B622E9F3 /* Pods-TimeZoneLocate_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TimeZoneLocate_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E57DEB52C5F16AA876557B0CF11CB669 /* Pods-TimeZoneLocate_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TimeZoneLocate_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		EA258B8376B6620E2D02D5BF7E157ABF /* Pods-TimeZoneLocate_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TimeZoneLocate_Example-dummy.m"; sourceTree = "<group>"; };
+		F0D7C83693C5D292731E7A48B3BC8689 /* TimeZoneLocate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TimeZoneLocate-umbrella.h"; sourceTree = "<group>"; };
+		F44839F5E25952E06FA4BC7661D3DE76 /* Pods-TimeZoneLocate_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TimeZoneLocate_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FF2E2435E86A18F1D92E9E95958D49D8 /* TimeZoneLocate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TimeZoneLocate.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0B77F984249F307D89D9B7A43CC8F367 /* Frameworks */ = {
+		04345EDFE15989205A341A365C64C241 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE8DD629DEE1868CE7BF6122D33215FF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5113C98A99DE2395BF5E72DB156F3AAA /* Frameworks */ = {
+		1111D66B2FBC13A6D5475C1322682C90 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				650CE3CC786AB5DB39BCE11C76DBE054 /* CoreLocation.framework in Frameworks */,
-				22E4A51C30FC94D9332936653AFDCF90 /* Foundation.framework in Frameworks */,
-				2FC89B56F6282A9036DBD7052EB3D097 /* UIKit.framework in Frameworks */,
+				C444B19DA6194D39DCB63CFBA2E0D8A4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7AF7E7FED33D5F550F2054E213C85D21 /* Frameworks */ = {
+		26AF9ACB77E7341975995132F5A5AA76 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E05A0FC7AF47DD96BA761AC629E8CBD9 /* CoreLocation.framework in Frameworks */,
+				838147E465C16D8228744A6D71A37F3D /* Foundation.framework in Frameworks */,
+				9BC57B6016365FC443F2C032C99EEFC2 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,29 +101,85 @@
 		0C4D68DCC9AA57144851BD35F3914233 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C3DE6011FEE4C876A1B5D05F2BA1E777 /* Pods-TimeZoneLocate_Example */,
+				60C5ECF6C73A8059299D69F3127F145E /* Pods-TimeZoneLocate_Example */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		0D7D7A8E82C6C69E28E45479140583E4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D12DA972E4C3874AAB1AD136031AC7B8 /* CoreLocation.framework */,
+				70B7ABADEB88326912AFB72BB17032D8 /* Foundation.framework */,
+				6A216DB36140C5737909B8937BAE6854 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D2C1FAF2B60EDEA08747846FBF4817EA /* iOS */,
+				0D7D7A8E82C6C69E28E45479140583E4 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		76F6E650E32B8E0A5E187F48A2041EB9 /* Support Files */ = {
+		2205CFF152516B0CE797DE5C7135263B /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6C987D6E91FD0B201A53D75D6CD472A5 /* Info.plist */,
-				09216C2796818B0B1B678E47C0FFF54E /* ResourceBundle-TimeZoneLocate-Info.plist */,
-				41CA675A5C4E74198641317C1DF149F4 /* TimeZoneLocate.modulemap */,
-				BE2DC41554424A4499CEE120C734E57E /* TimeZoneLocate.xcconfig */,
-				6F38EAF23A07FDF754D884F90CBC9343 /* TimeZoneLocate-dummy.m */,
-				B7C839EE106577343DA4DD0EC0F49470 /* TimeZoneLocate-prefix.pch */,
-				ED515E1727063DEBF1F35F7A1A830A3E /* TimeZoneLocate-umbrella.h */,
+				AAF339B587A682F26539BF2EBB7458B0 /* TimeZoneLocate */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		437ED5AB7DD8F61F9D8AFB22B653369B /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				328A1F1193D7BD0E4AC78D21C4868FB2 /* LICENSE */,
+				52D1F537C6A85BB0D538E2A9BB1114CC /* README.md */,
+				3366D20EDDD7D97B41706ABC1BE622C8 /* TimeZoneLocate.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		60C5ECF6C73A8059299D69F3127F145E /* Pods-TimeZoneLocate_Example */ = {
+			isa = PBXGroup;
+			children = (
+				C0378FA6D5EF15748888C09D6FD9E627 /* Info.plist */,
+				5F63E2F7327A3A4AA148EBCA3468207F /* Pods-TimeZoneLocate_Example.modulemap */,
+				F44839F5E25952E06FA4BC7661D3DE76 /* Pods-TimeZoneLocate_Example-acknowledgements.markdown */,
+				E57DEB52C5F16AA876557B0CF11CB669 /* Pods-TimeZoneLocate_Example-acknowledgements.plist */,
+				EA258B8376B6620E2D02D5BF7E157ABF /* Pods-TimeZoneLocate_Example-dummy.m */,
+				99071769FEEE750E3EDF3DB7EB91E152 /* Pods-TimeZoneLocate_Example-frameworks.sh */,
+				98699194437AB5927D1452DC9C664BAC /* Pods-TimeZoneLocate_Example-resources.sh */,
+				DC496FE12FC89E71FCCB91FB3071C36A /* Pods-TimeZoneLocate_Example-umbrella.h */,
+				DE4AC5832B9E8CAF17F94F57B622E9F3 /* Pods-TimeZoneLocate_Example.debug.xcconfig */,
+				6E29B73439E16B7440538D0ED4719B3B /* Pods-TimeZoneLocate_Example.release.xcconfig */,
+			);
+			name = "Pods-TimeZoneLocate_Example";
+			path = "Target Support Files/Pods-TimeZoneLocate_Example";
+			sourceTree = "<group>";
+		};
+		70302EBB641BFD1DFC4566016296C14E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B7FAE20B5E3A6C5A80223BACCD84C9F /* Pods_TimeZoneLocate_Example.framework */,
+				650CDAD447700ACEBC88654B28D28641 /* TimeZoneLocate.bundle */,
+				257E903349F8C8824556DF26ECB76295 /* TimeZoneLocate.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		757EC4EA649708308606E64A217747ED /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BD1D20078CEA08CD450A0A72B691F28 /* Info.plist */,
+				BB8F785B53E95DD6E750B53FF24ACE62 /* ResourceBundle-TimeZoneLocate-Info.plist */,
+				FF2E2435E86A18F1D92E9E95958D49D8 /* TimeZoneLocate.modulemap */,
+				591D686770BB4E75178B7BBF40418621 /* TimeZoneLocate.xcconfig */,
+				1B8C22D445CE0E7BB90C8175A536E113 /* TimeZoneLocate-dummy.m */,
+				BB54D595CA182390BCDE2EDBF0E9EE37 /* TimeZoneLocate-prefix.pch */,
+				F0D7C83693C5D292731E7A48B3BC8689 /* TimeZoneLocate-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/TimeZoneLocate";
@@ -130,144 +189,100 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				A3F3C5F1F2D17DE5DC2BCBEB054FB486 /* Development Pods */,
+				2205CFF152516B0CE797DE5C7135263B /* Development Pods */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				E5911363EA38A6454F39A5E0CC4D2ADF /* Products */,
+				70302EBB641BFD1DFC4566016296C14E /* Products */,
 				0C4D68DCC9AA57144851BD35F3914233 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		84787A5BC0E013061E2AA873EF483F06 /* Resources */ = {
+		8F138A58FAF9373E6F9419DB7A5C2185 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5745CB22F8DEB1DB27681A8CBFA3394B /* timezones.json */,
+				881B635B1EB9EAF98434D3020BA2BB5D /* timezones.json */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		A3F3C5F1F2D17DE5DC2BCBEB054FB486 /* Development Pods */ = {
+		AAF339B587A682F26539BF2EBB7458B0 /* TimeZoneLocate */ = {
 			isa = PBXGroup;
 			children = (
-				DA26FC8BB2901C35C0B956FBE31ED348 /* TimeZoneLocate */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		C3DE6011FEE4C876A1B5D05F2BA1E777 /* Pods-TimeZoneLocate_Example */ = {
-			isa = PBXGroup;
-			children = (
-				2126EF8958D95C60833C5839A75283DC /* Info.plist */,
-				6B084B6F7FE4BA8CCD17F0F17F351856 /* Pods-TimeZoneLocate_Example.modulemap */,
-				60592F86E32230FE4227280C12EA9A12 /* Pods-TimeZoneLocate_Example-acknowledgements.markdown */,
-				C20B14B88F1CB63C697F3D465DFD410D /* Pods-TimeZoneLocate_Example-acknowledgements.plist */,
-				2F7FDF8282C62EF5D4CE33641F4F0C25 /* Pods-TimeZoneLocate_Example-dummy.m */,
-				46A246791687F4B4D961EDDEA10ED998 /* Pods-TimeZoneLocate_Example-frameworks.sh */,
-				5767069AED7624C7C136E7062E08B0D2 /* Pods-TimeZoneLocate_Example-resources.sh */,
-				DD75873D33E4F9D216A4DB21AC206207 /* Pods-TimeZoneLocate_Example-umbrella.h */,
-				2AF535172D66FEB296597232CEAF05BC /* Pods-TimeZoneLocate_Example.debug.xcconfig */,
-				9BC0FFE7B51099C60A5E46984D7FFC61 /* Pods-TimeZoneLocate_Example.release.xcconfig */,
-			);
-			name = "Pods-TimeZoneLocate_Example";
-			path = "Target Support Files/Pods-TimeZoneLocate_Example";
-			sourceTree = "<group>";
-		};
-		D2C1FAF2B60EDEA08747846FBF4817EA /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CD19AB250D71A3F1FB09A3110CFB130D /* CoreLocation.framework */,
-				79182AE44C97C1E8C888A725FD7BD823 /* Foundation.framework */,
-				D5190CB20CBCB12783E3337EF782F6D2 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		DA26FC8BB2901C35C0B956FBE31ED348 /* TimeZoneLocate */ = {
-			isa = PBXGroup;
-			children = (
-				F1B21DCA0A99638EBCCE2F1F6BC1CDB3 /* TimeZoneLocate.swift */,
-				84787A5BC0E013061E2AA873EF483F06 /* Resources */,
-				76F6E650E32B8E0A5E187F48A2041EB9 /* Support Files */,
+				D5A7DB7ECEB2E64A43F60AD56519634F /* TimeZoneLocate.swift */,
+				437ED5AB7DD8F61F9D8AFB22B653369B /* Pod */,
+				8F138A58FAF9373E6F9419DB7A5C2185 /* Resources */,
+				757EC4EA649708308606E64A217747ED /* Support Files */,
 			);
 			name = TimeZoneLocate;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		E5911363EA38A6454F39A5E0CC4D2ADF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B3806BA00CBFC8C97556D1BE7E62A890 /* Pods_TimeZoneLocate_Example.framework */,
-				D19C96F0BD7A5FC535A0A8D9D29F372F /* TimeZoneLocate.bundle */,
-				0A40E16AFFB592FC0BDDD5E3C245ACF4 /* TimeZoneLocate.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		7EA6C99A14981D9B274F3F482925219F /* Headers */ = {
+		DD50C79D78F9C65810B63337A62AB766 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCE86F92A70DAAB49F36420665EA4BF6 /* TimeZoneLocate-umbrella.h in Headers */,
+				8A273C0BD85853C7E20AC3FF11502186 /* Pods-TimeZoneLocate_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F5A0C37A6BA9B2CDA8196EF28B631628 /* Headers */ = {
+		E0A828844849727AA043955B053CD842 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB2EA640327866184A626E73E3D06F73 /* Pods-TimeZoneLocate_Example-umbrella.h in Headers */,
+				F3AE464902C7E7E3ABBC9AA4F25E9465 /* TimeZoneLocate-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1D95E9399D3EA2DE0A0AA42B6F8429CD /* TimeZoneLocate */ = {
+		40A7E9BA5B202C33EE4E12AF7D9DCEEE /* TimeZoneLocate */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E132C804E8452FAC88A5A796C7CA3426 /* Build configuration list for PBXNativeTarget "TimeZoneLocate" */;
+			buildConfigurationList = 2B99C0D585C99B4A0FD66DE47CB595D0 /* Build configuration list for PBXNativeTarget "TimeZoneLocate" */;
 			buildPhases = (
-				2DE3C88574E0DA9CEC0F377B59615C45 /* Sources */,
-				5113C98A99DE2395BF5E72DB156F3AAA /* Frameworks */,
-				6C7B81A603D7704B8AAE32D15AE2220B /* Resources */,
-				7EA6C99A14981D9B274F3F482925219F /* Headers */,
+				E0A828844849727AA043955B053CD842 /* Headers */,
+				69941C47B6D2AEEAAFCDC2BB9F088DE6 /* Sources */,
+				26AF9ACB77E7341975995132F5A5AA76 /* Frameworks */,
+				EB4BFD84A77118F392DD016B50AE6AEA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FBDEAC52C184C4925BC6F59790B07308 /* PBXTargetDependency */,
+				99FD84496CDF04CAED33627555B57B82 /* PBXTargetDependency */,
 			);
 			name = TimeZoneLocate;
 			productName = TimeZoneLocate;
-			productReference = 0A40E16AFFB592FC0BDDD5E3C245ACF4 /* TimeZoneLocate.framework */;
+			productReference = 257E903349F8C8824556DF26ECB76295 /* TimeZoneLocate.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CA53A3E1357E5A02F9A4F7017CEA6B37 /* Pods-TimeZoneLocate_Example */ = {
+		B5F74DAC63BA6CC441D66FCD721A63E5 /* Pods-TimeZoneLocate_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A0853DB774C7D0B530AE00967886D907 /* Build configuration list for PBXNativeTarget "Pods-TimeZoneLocate_Example" */;
+			buildConfigurationList = F46ACAA89713CE1608F41BA27B517B78 /* Build configuration list for PBXNativeTarget "Pods-TimeZoneLocate_Example" */;
 			buildPhases = (
-				20D114ACFE97BE05C121F1AFA2D4DED5 /* Sources */,
-				0B77F984249F307D89D9B7A43CC8F367 /* Frameworks */,
-				F5A0C37A6BA9B2CDA8196EF28B631628 /* Headers */,
+				DD50C79D78F9C65810B63337A62AB766 /* Headers */,
+				070049F68A599D4FA457FEDA039D362F /* Sources */,
+				1111D66B2FBC13A6D5475C1322682C90 /* Frameworks */,
+				95B17781A00AAF9DCC2B4F18583802A6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0E2A8F8FDB9B9FDF1C14F315EC272BAE /* PBXTargetDependency */,
+				B100BDE559C83FC26B71EACBF1691486 /* PBXTargetDependency */,
 			);
 			name = "Pods-TimeZoneLocate_Example";
 			productName = "Pods-TimeZoneLocate_Example";
-			productReference = B3806BA00CBFC8C97556D1BE7E62A890 /* Pods_TimeZoneLocate_Example.framework */;
+			productReference = 2B7FAE20B5E3A6C5A80223BACCD84C9F /* Pods_TimeZoneLocate_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E60D78971D9924206DEE794D780CF0F4 /* TimeZoneLocate-TimeZoneLocate */ = {
+		CA1DA21380A13D921EE2991AB59BE32B /* TimeZoneLocate-TimeZoneLocate */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 207C1387706E60E000952C21C46C1071 /* Build configuration list for PBXNativeTarget "TimeZoneLocate-TimeZoneLocate" */;
+			buildConfigurationList = D4904CFA3C4680DD14FE646ACE244467 /* Build configuration list for PBXNativeTarget "TimeZoneLocate-TimeZoneLocate" */;
 			buildPhases = (
-				A5A095ABCF9A264E9607F7FD37E9D9F5 /* Sources */,
-				7AF7E7FED33D5F550F2054E213C85D21 /* Frameworks */,
-				6FBED73BB04B6853282BD2550B985FAD /* Resources */,
+				BF892D168F22D819E2BB85CC9A96043A /* Sources */,
+				04345EDFE15989205A341A365C64C241 /* Frameworks */,
+				6EA2126F67599D76BB22470AE3959547 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -275,7 +290,7 @@
 			);
 			name = "TimeZoneLocate-TimeZoneLocate";
 			productName = "TimeZoneLocate-TimeZoneLocate";
-			productReference = D19C96F0BD7A5FC535A0A8D9D29F372F /* TimeZoneLocate.bundle */;
+			productReference = 650CDAD447700ACEBC88654B28D28641 /* TimeZoneLocate.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -284,13 +299,8 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 1000;
-				TargetAttributes = {
-					1D95E9399D3EA2DE0A0AA42B6F8429CD = {
-						LastSwiftMigration = 1000;
-					};
-				};
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -300,55 +310,62 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = E5911363EA38A6454F39A5E0CC4D2ADF /* Products */;
+			productRefGroup = 70302EBB641BFD1DFC4566016296C14E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CA53A3E1357E5A02F9A4F7017CEA6B37 /* Pods-TimeZoneLocate_Example */,
-				1D95E9399D3EA2DE0A0AA42B6F8429CD /* TimeZoneLocate */,
-				E60D78971D9924206DEE794D780CF0F4 /* TimeZoneLocate-TimeZoneLocate */,
+				B5F74DAC63BA6CC441D66FCD721A63E5 /* Pods-TimeZoneLocate_Example */,
+				40A7E9BA5B202C33EE4E12AF7D9DCEEE /* TimeZoneLocate */,
+				CA1DA21380A13D921EE2991AB59BE32B /* TimeZoneLocate-TimeZoneLocate */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6C7B81A603D7704B8AAE32D15AE2220B /* Resources */ = {
+		6EA2126F67599D76BB22470AE3959547 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11F5501F276494634181CF6C9FC02E92 /* TimeZoneLocate.bundle in Resources */,
+				96EC5CDA644869D214B0C821CA71B274 /* timezones.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6FBED73BB04B6853282BD2550B985FAD /* Resources */ = {
+		95B17781A00AAF9DCC2B4F18583802A6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB825AAAC69D79832C434979D4DB272E /* timezones.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB4BFD84A77118F392DD016B50AE6AEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC30AB9E7E4CF1C17C318F554437531D /* TimeZoneLocate.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		20D114ACFE97BE05C121F1AFA2D4DED5 /* Sources */ = {
+		070049F68A599D4FA457FEDA039D362F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A0E9F9FA885DEA08ED65B2480A614A0 /* Pods-TimeZoneLocate_Example-dummy.m in Sources */,
+				21A38F44678AA8AD77BDE2273B67AC1F /* Pods-TimeZoneLocate_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2DE3C88574E0DA9CEC0F377B59615C45 /* Sources */ = {
+		69941C47B6D2AEEAAFCDC2BB9F088DE6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEF5DFA405C19E6C1C123BF36028BCA1 /* TimeZoneLocate-dummy.m in Sources */,
-				61DD04C44CF08A1AFD7610D51BA55692 /* TimeZoneLocate.swift in Sources */,
+				0480E556FAC1F7D1AAA9F70B09A83D7D /* TimeZoneLocate-dummy.m in Sources */,
+				A54726256DDF547A9659430891105C99 /* TimeZoneLocate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A5A095ABCF9A264E9607F7FD37E9D9F5 /* Sources */ = {
+		BF892D168F22D819E2BB85CC9A96043A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -358,87 +375,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0E2A8F8FDB9B9FDF1C14F315EC272BAE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TimeZoneLocate;
-			target = 1D95E9399D3EA2DE0A0AA42B6F8429CD /* TimeZoneLocate */;
-			targetProxy = 85986145E3403CF4E0B6590F786B7C52 /* PBXContainerItemProxy */;
-		};
-		FBDEAC52C184C4925BC6F59790B07308 /* PBXTargetDependency */ = {
+		99FD84496CDF04CAED33627555B57B82 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "TimeZoneLocate-TimeZoneLocate";
-			target = E60D78971D9924206DEE794D780CF0F4 /* TimeZoneLocate-TimeZoneLocate */;
-			targetProxy = 54DBA89451EA815AC7AB21372B4503C6 /* PBXContainerItemProxy */;
+			target = CA1DA21380A13D921EE2991AB59BE32B /* TimeZoneLocate-TimeZoneLocate */;
+			targetProxy = B32A6F313FBE2C3BF115BC7D10B90667 /* PBXContainerItemProxy */;
+		};
+		B100BDE559C83FC26B71EACBF1691486 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TimeZoneLocate;
+			target = 40A7E9BA5B202C33EE4E12AF7D9DCEEE /* TimeZoneLocate */;
+			targetProxy = 6535E03BED26C6205ABED86AABB1F5BC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		16604581E4D2D9D64F5FBEA6E5140E57 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BC0FFE7B51099C60A5E46984D7FFC61 /* Pods-TimeZoneLocate_Example.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TimeZoneLocate_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TimeZoneLocate_Example/Pods-TimeZoneLocate_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TimeZoneLocate_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5834735DD947C44E5806C73D3AAD797E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE2DC41554424A4499CEE120C734E57E /* TimeZoneLocate.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TimeZoneLocate/TimeZoneLocate-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TimeZoneLocate/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TimeZoneLocate/TimeZoneLocate.modulemap";
-				PRODUCT_NAME = TimeZoneLocate;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6F9224530522DD3C735EC96CF142642E /* Release */ = {
+		60DAF49CA7A9F362148D49C3C3123B2A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -448,6 +400,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -469,130 +422,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		9572AC75795992BDBB2B1BBF8B888117 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AF535172D66FEB296597232CEAF05BC /* Pods-TimeZoneLocate_Example.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TimeZoneLocate_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TimeZoneLocate_Example/Pods-TimeZoneLocate_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TimeZoneLocate_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		979F169AB57A84F9923E249394F77610 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE2DC41554424A4499CEE120C734E57E /* TimeZoneLocate.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TimeZoneLocate/TimeZoneLocate-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TimeZoneLocate/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TimeZoneLocate/TimeZoneLocate.modulemap";
-				PRODUCT_NAME = TimeZoneLocate;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B57951D085A1B98A97F8A1062A5E5C5B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -614,19 +444,104 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		BABCB5BC9D3C3E11FF82971F947B2FF7 /* Release */ = {
+		67E9522E1347177777FA83794F01B2E1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE2DC41554424A4499CEE120C734E57E /* TimeZoneLocate.xcconfig */;
+			baseConfigurationReference = 591D686770BB4E75178B7BBF40418621 /* TimeZoneLocate.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TimeZoneLocate/TimeZoneLocate-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TimeZoneLocate/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TimeZoneLocate/TimeZoneLocate.modulemap";
+				PRODUCT_MODULE_NAME = TimeZoneLocate;
+				PRODUCT_NAME = TimeZoneLocate;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7096BBA94CDD3DFF7CF6453939F2DEA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 591D686770BB4E75178B7BBF40418621 /* TimeZoneLocate.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TimeZoneLocate";
+				INFOPLIST_FILE = "Target Support Files/TimeZoneLocate/ResourceBundle-TimeZoneLocate-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = TimeZoneLocate;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A7A88CD3BBDD6AE149A154FC022EEFF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE4AC5832B9E8CAF17F94F57B622E9F3 /* Pods-TimeZoneLocate_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TimeZoneLocate_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TimeZoneLocate_Example/Pods-TimeZoneLocate_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A9EA0CAC15CB70400F2B9CE1573CAF23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 591D686770BB4E75178B7BBF40418621 /* TimeZoneLocate.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TimeZoneLocate";
@@ -640,30 +555,141 @@
 			};
 			name = Release;
 		};
-		D0EE80B8169F11F4E33FE0303F8BE59D /* Debug */ = {
+		AC9B69330D72E00A5045DACAA47A1786 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE2DC41554424A4499CEE120C734E57E /* TimeZoneLocate.xcconfig */;
+			baseConfigurationReference = 591D686770BB4E75178B7BBF40418621 /* TimeZoneLocate.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TimeZoneLocate";
-				INFOPLIST_FILE = "Target Support Files/TimeZoneLocate/ResourceBundle-TimeZoneLocate-Info.plist";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TimeZoneLocate/TimeZoneLocate-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TimeZoneLocate/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TimeZoneLocate/TimeZoneLocate.modulemap";
+				PRODUCT_MODULE_NAME = TimeZoneLocate;
 				PRODUCT_NAME = TimeZoneLocate;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		C4EAA84F44D044E108500A81C635F21E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E23BD3AB947D7F35CDFFA49B61200B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E29B73439E16B7440538D0ED4719B3B /* Pods-TimeZoneLocate_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TimeZoneLocate_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TimeZoneLocate_Example/Pods-TimeZoneLocate_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		207C1387706E60E000952C21C46C1071 /* Build configuration list for PBXNativeTarget "TimeZoneLocate-TimeZoneLocate" */ = {
+		2B99C0D585C99B4A0FD66DE47CB595D0 /* Build configuration list for PBXNativeTarget "TimeZoneLocate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D0EE80B8169F11F4E33FE0303F8BE59D /* Debug */,
-				BABCB5BC9D3C3E11FF82971F947B2FF7 /* Release */,
+				AC9B69330D72E00A5045DACAA47A1786 /* Debug */,
+				67E9522E1347177777FA83794F01B2E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -671,26 +697,26 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B57951D085A1B98A97F8A1062A5E5C5B /* Debug */,
-				6F9224530522DD3C735EC96CF142642E /* Release */,
+				60DAF49CA7A9F362148D49C3C3123B2A /* Debug */,
+				C4EAA84F44D044E108500A81C635F21E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A0853DB774C7D0B530AE00967886D907 /* Build configuration list for PBXNativeTarget "Pods-TimeZoneLocate_Example" */ = {
+		D4904CFA3C4680DD14FE646ACE244467 /* Build configuration list for PBXNativeTarget "TimeZoneLocate-TimeZoneLocate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9572AC75795992BDBB2B1BBF8B888117 /* Debug */,
-				16604581E4D2D9D64F5FBEA6E5140E57 /* Release */,
+				7096BBA94CDD3DFF7CF6453939F2DEA9 /* Debug */,
+				A9EA0CAC15CB70400F2B9CE1573CAF23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E132C804E8452FAC88A5A796C7CA3426 /* Build configuration list for PBXNativeTarget "TimeZoneLocate" */ = {
+		F46ACAA89713CE1608F41BA27B517B78 /* Build configuration list for PBXNativeTarget "Pods-TimeZoneLocate_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5834735DD947C44E5806C73D3AAD797E /* Debug */,
-				979F169AB57A84F9923E249394F77610 /* Release */,
+				A7A88CD3BBDD6AE149A154FC022EEFF8 /* Debug */,
+				E23BD3AB947D7F35CDFFA49B61200B17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
