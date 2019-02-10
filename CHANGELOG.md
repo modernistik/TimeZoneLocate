@@ -3,6 +3,9 @@ All notable changes to this project will be documented in this file.
 `TimeZoneLocate` adheres to [Semantic Versioning](http://semver.org/).
 
 ---
+## 0.4.3
+* Adds PR #8 to include WatchOS.
+
 ## 0.4.2
 * Warning fixes to static properties.
 
