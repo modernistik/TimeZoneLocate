@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "TimeZoneLocate"
-  s.version          = "0.4.3"
+  s.version          = "0.4.4"
   s.summary          = "Get a time zone for a location offline."
 
 # This description is used to generate tags and improve search results.
@@ -28,19 +28,17 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/modernistik/TimeZoneLocate.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/modernistik'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
   s.tvos.deployment_target = '9.0'
   s.watchos.deployment_target = '5.0'
-  s.swift_version = "4.2"
+  s.swift_version = ["4.2", "5.0"]
 
   s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
     'TimeZoneLocate' => ['Pod/Assets/timezones.json']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = ['UIKit', 'CoreLocation']
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
 # To publish `pod trunk push TimeZoneLocate.podspec`
 # https://guides.cocoapods.org/making/getting-setup-with-trunk.html
