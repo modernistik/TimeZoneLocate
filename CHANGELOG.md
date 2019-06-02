@@ -3,6 +3,9 @@ All notable changes to this project will be documented in this file.
 `TimeZoneLocate` adheres to [Semantic Versioning](http://semver.org/).
 
 ---
+## 0.5.0
+* Project and spec updates for Swift 5 and Cocoapods 1.7.1
+
 ## 0.4.3
 * Adds PR #8 to include WatchOS.
 
