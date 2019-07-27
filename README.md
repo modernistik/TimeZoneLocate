@@ -1,5 +1,10 @@
 # TimeZoneLocate
 
+[![CI Status](https://img.shields.io/travis/modernistik/TimeZoneLocate.svg?style=flat)](https://travis-ci.org/modernistik/TimeZoneLocate)
+[![Version](https://img.shields.io/cocoapods/v/TimeZoneLocate.svg?style=flat)](https://cocoapods.org/pods/TimeZoneLocate)
+[![License](https://img.shields.io/cocoapods/l/TimeZoneLocate.svg?style=flat)](https://cocoapods.org/pods/TimeZoneLocate)
+[![Platform](https://img.shields.io/cocoapods/p/TimeZoneLocate.svg?style=flat)](https://cocoapods.org/pods/TimeZoneLocate)
+
 This utility is the Swift port of the [APTimeZones](https://github.com/Alterplay/APTimeZones) library with the support for bundled frameworks. If your project is Objective-C, we recommend using theirs.
 
 * For Swift 5 version, use version `~> 0.5.0`.
