@@ -26,16 +26,16 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "Anthony Persaud" => "persaud@modernistik.com" }
   s.source           = { :git => "https://github.com/modernistik/TimeZoneLocate.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/modernistik'
+  s.social_media_url = 'https://www.modernistik.com'
 
   s.ios.deployment_target = '10.0'
   s.tvos.deployment_target = '9.0'
   s.watchos.deployment_target = '5.0'
   s.swift_version = ["4.2", "5.0"]
 
-  s.source_files = 'Pod/Classes/**/*'
+  s.source_files = 'TimeZoneLocate/Classes/**/*'
   s.resource_bundles = {
-    'TimeZoneLocate' => ['Pod/Assets/timezones.json']
+    'TimeZoneLocate' => ['TimeZoneLocate/Assets/timezones.json']
   }
 
   s.frameworks = ['UIKit', 'CoreLocation']
