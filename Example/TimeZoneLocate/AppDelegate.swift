@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import CoreLocation
-import TimeZoneLocate
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,35 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        let location = CLLocation(latitude: 32.88, longitude: -117.15)
-        //helper method
-        let theTimeZone = location.timeZone
-        print("TimeZone: \(theTimeZone.identifier)")
-        // Or the shared method
-        let timeZone = TimeZoneLocate.timeZoneWithLocation(location)
-        print(timeZone)
-        if let timeZone = TimeZoneLocate.timeZone(location: location, countryCode: nil) {
-            print(timeZone)
-        }
-        
-        let geocoder = CLGeocoder()
-        geocoder.geocodeAddressString("San Diego, CA") { (placemarks, error) -> Void in
-            if error == nil, let placemarks = placemarks, let placemark = placemarks.first {
-                
-                let locationTimeZone = placemark.location?.timeZone
-                print(locationTimeZone!)
-                //of if country code is known, then
-                if let location = placemark.location, let countryCode = placemark.addressDictionary?["CountryCode"] as? String {
-                    let fastTimeZone = TimeZoneLocate.timeZone(location: location, countryCode: countryCode)
-                    print(fastTimeZone!)
-                }
-                
-                //Helper method
-
-            }
-        }
-        
         return true
     }
 
